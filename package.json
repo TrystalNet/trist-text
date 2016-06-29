@@ -1,0 +1,40 @@
+{
+  "name": "trist-text",
+  "version": "1.0.6",
+  "description": "Algorithms for use in Trystal / Linelo projects",
+  "homepage": "https://github.com/TrystalNet/trist-text#readme",
+  "author": "Terence O'Neill <terry.oneill@trystal.net>",
+  "typings": "lib/trist-text.d.ts",
+  "contributors": [],
+  "keywords": [
+    "trystal",
+    "linelo",
+    "algorithms"
+  ],
+  "main": "algorithms.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrystalNet/trist-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrystalNet/trist-text/issues"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.2.22-alpha",
+    "@types/lodash": "^4.0.21-alpha",
+    "jasmine": "^2.4.1"
+  },
+  "scripts": {
+    "prod": "tsc -p tsconfig.json",
+    "test": "tsc -p ./test/tsconfig.json"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "lodash": "^4.13.1",
+    "trist": "^1.0.3"
+  }
+}
