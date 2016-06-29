@@ -1,21 +1,19 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "sourceMap": true,
-    "removeComments": false,
+    "removeComments": true,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-    "declaration": true,
-    "outFile": "../dist/trist-text.js"
-  }  ,
+    "strictNullChecks": true,
+    "declaration": false,
+    "outDir": ".."
+  },
   "files": [
     "../node_modules/@types/lodash/index.d.ts",
-    "../node_modules/trist/dist/trist.d.ts",
     "../node_modules/immutable/dist/immutable.d.ts",
     "./trist-text.ts"
   ],
   "exclude": [
-    "node_modules",
-    "../dist"
+    "node_modules"
   ]
 }

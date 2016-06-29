@@ -1,7 +1,7 @@
 {
   "name": "trist-text",
-  "version": "1.0.6",
-  "description": "Algorithms for use in Trystal / Linelo projects",
+  "version": "1.0.7",
+  "description": "Tools for converting raw text into trists for use in Trystal.Net and other products.",
   "homepage": "https://github.com/TrystalNet/trist-text#readme",
   "author": "Terence O'Neill <terry.oneill@trystal.net>",
   "typings": "lib/trist-text.d.ts",
@@ -24,6 +24,8 @@
     "@types/jasmine": "^2.2.22-alpha",
     "@types/lodash": "^4.0.21-alpha",
     "jasmine": "^2.4.1",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
     "webpack": "^1.13.1"
   },
   "scripts": {

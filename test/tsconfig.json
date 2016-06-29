@@ -8,11 +8,10 @@
     "outDir": "./bin"
   }  ,
   "files": [
-    "../node_modules/@types/lodash/index.d.ts",
     "../node_modules/@types/jasmine/index.d.ts",
+    "../node_modules/@types/lodash/index.d.ts",
     "../node_modules/immutable/dist/immutable.d.ts",
-    "../node_modules/trist/dist/trist.d.ts",
-    "../dist/trist-text.d.ts",
+    "../node_modules/trist/trist.d.ts",
     "./test.spec.ts"
   ]
 }

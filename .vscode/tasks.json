@@ -4,7 +4,22 @@
   "version": "0.1.0",
   "command": "tsc",
   "isShellCommand": true,
-  "args": ["-p", "."],
-  "showOutput": "silent",
-  "problemMatcher": "$tsc"
+  "tasks": [
+    {
+      "taskName": "build",
+      "args": ["-p","./src"],
+      "showOutput": "always",
+      "problemMatcher": "$tsc",
+      "isBuildCommand": true,
+      "suppressTaskName": true
+    },
+    {
+      "taskName": "test",
+      "args": ["-p", "./test"],
+      "showOutput": "always",
+      "problemMatcher": "$tsc",
+      "isTestCommand": true,
+      "suppressTaskName": true
+    }
+  ]
 }

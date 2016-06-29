@@ -1,4 +1,5 @@
-const {textToChain} = TristText
+import {Chain,chainOps} from 'trist'
+import {textToChain} from '../src/trist-text'
 
 const factory = (levels:string) => {
   const words = "zero one two three four five six seven eight nine ten".split(' ') 
@@ -8,10 +9,10 @@ const factory = (levels:string) => {
   .join('\n')
 }
 
-const dump = (chain:Trist.Chain) => {
+const dump = (chain:Chain) => {
   const numberOrDash = (n:number) => _.isNumber(n) ? n.toString() : '-'
   const stringOrDash = (s:string) => _.isString(s) ? s : '-'
-  const cops = Trist.chainOps(chain)
+  const cops = chainOps(chain)
   const head = cops.head() 
   return {
     rlevels : cops.rlevels(head).map(rlevel => numberOrDash(rlevel)).join(''),
