@@ -1,4 +1,4 @@
-import {Chain,chainOps} from 'trist'
+import {Chain,chainOps} from '@trystal/trist'
 import {textToChain} from '../src/trist-text'
 
 const factory = (levels:string) => {

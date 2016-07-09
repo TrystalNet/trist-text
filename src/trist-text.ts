@@ -1,4 +1,4 @@
-import {Chain, chainify, collapseAll, Node} from 'trist'
+import {Chain, chainify, collapseAll, Node} from '@trystal/trist'
 
 type IdFactory = (n:number) => string
 type Splitted = {id:string, leader:string} 
