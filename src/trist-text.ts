@@ -1,4 +1,5 @@
-import {Chain, chainify, collapseAll, Node} from '@trystal/trist'
+import {Chain, Node, ChainIM} from '@trystal/interfaces'
+import {chainify, collapseAll} from '@trystal/trist'
 
 type IdFactory = (n:number) => string
 type Splitted = {id:string, leader:string} 
@@ -21,7 +22,7 @@ const fnLevels       = (splitted:Splitted[], levelKeys:string[]) => splitted.red
   return accum 
 },{})
 
-export function textToChain(text:string, fnNextId:(index:number)=>string) : Chain {
+export function textToChain(text:string, fnNextId:(index:number)=>string) : ChainIM {
   const strs      = text.split(/[\r\n]+/).filter(str => str.length)             
   const splitted  = _.map(strs,(str,index) => fnSplitOne(str, fnNextId, index)) 
   const levelKeys = fnLevelKeys(splitted.map(item => item.leader))              // ["", "  ", "    "]
