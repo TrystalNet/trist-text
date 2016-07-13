@@ -1,5 +1,9 @@
-import {Chain, Node, ChainIM} from '@trystal/interfaces'
+import {JS,IMM} from '@trystal/interfaces'
 import {chainify, collapseAll} from '@trystal/trist'
+
+import Chain = JS.Chain
+import Node = JS.Node
+import ChainIM = IMM.Chain
 
 type IdFactory = (n:number) => string
 type Splitted = {id:string, leader:string} 

@@ -1,5 +1,8 @@
-import {Chain,chainOps} from '@trystal/trist'
+import {IMM}  from '@trystal/interfaces'
+import {chainOps} from '@trystal/trist'
 import {textToChain} from '../src/trist-text'
+
+import Chain = IMM.Chain
 
 const factory = (levels:string) => {
   const words = "zero one two three four five six seven eight nine ten".split(' ') 

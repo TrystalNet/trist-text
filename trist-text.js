@@ -1,5 +1,5 @@
 "use strict";
-var trist_1 = require('trist');
+var trist_1 = require('@trystal/trist');
 var fnLeaderLen = function (leader) { return leader.replace(/\t/g, "    ").length; };
 var fnMatchToSplit = function (id, leader, trystup) { return ({ id: id, leader: leader, trystup: trystup }); };
 var fnSplitOne = function (str, idFactory, index) {
